@@ -17,7 +17,7 @@ You just need a web browser to run the project.
 ## Usage
 1. Add a new task by entering text in the input field and clicking the "Add" button.
 2. Mark tasks as complete by clicking the checkbox.
-3. Edit tasks by clicking on the task text.
+3. Rigth click to edit and delete a task.
 4. Delete tasks using the delete icon.
    
 ## Project Structure
