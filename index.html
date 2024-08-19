@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Doer</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="date">
+                <ul>
+                    <li class="day"> Monday</li>
+                    <li class="month">31st August</li>
+                </ul>
+            </div>
+            <h1 class="title">DOER</h1>
+            <div class="time">11:30:00</div>
+        </div>
+
+        <div class="task">
+            <h1 class="task-txt">Tasks</h1>
+            <div class="scroll">
+                <div class="task-box">
+                    <div class="left">
+                        <img src="images/done.png" alt="" class="done">
+                        <p class="task-title">Untitle</p>
+                    </div>
+                    <div class="task-desc" style="display: none;"> </div>
+                </div>
+            </div>
+        </div>
+        <img src="images/add.png" alt="add" class="add">
+        <div class="other">
+            <div class="edit-opt">
+                <img src="images/edit.png" alt="">
+                <p class="edit-opt-txt">Edit</p>
+            </div>
+            <div class="del-opt">
+                <img src="images/delete.png" alt="">
+                <p class="del-opt-txt">Delete</p>
+            </div>
+        </div>
+
+        <div class="desc">
+            <div class="desc-header">
+                <p class="save">Save</p>
+                <div class="exit">
+                    <p class="delete">Delete</p>
+                    <img src="images/cross-light.png" alt="" class="cross">
+                </div>
+            </div>
+            <label for="desc-task-title">
+                <h2>Title</h2>
+                <input class="desc-task-title" type="text">
+            </label>
+            <label for="description">
+                <h2>Description</h2>
+                <textarea name="text" class="description"></textarea>
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
