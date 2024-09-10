@@ -12,6 +12,7 @@ body {
 .container {
     width: 700px;
     margin: 0 auto;
+    position: relative;
 }
 
 .header {
@@ -58,7 +59,6 @@ li {
 
 .task {
     background-color: var(--light-background);
-    height: 69vh;
     width: 305px;
     margin: 20px auto;
     border-radius: 10px;
@@ -67,6 +67,9 @@ li {
     flex-flow: column;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: absolute;
+    left: 12rem;
+    max-height: 350px;
 }
 
 .scroll {
@@ -81,6 +84,7 @@ li {
     text-align: center;
     margin: 0 auto;
     font-weight: 800;
+    padding-bottom: 1rem ;
 }
 
 .task-box {
@@ -105,9 +109,10 @@ li {
     width: 40px;
     border-radius: 50%;
     display: flex;
-    margin: -41px auto;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: absolute;
+    bottom: -1.5rem;
 }
 
 .done {
@@ -120,15 +125,15 @@ li {
 }
 
 .desc {
-    height: 63vh;
     background-color: var(--light-background);
     width: 320px;
     border-radius: 10px;
     padding: 27px;
-    margin-top: -380px;
-    margin-left: 160px;
-    position: absolute;
+    position: relative;
+    margin-top: 20px;
+    left: 10rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
 }
 
 .desc h2 {

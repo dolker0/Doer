@@ -78,14 +78,16 @@ save.addEventListener("click", () => {
             event.preventDefault();
 
             edit_menu.style.visibility = "visible";
-            edit_menu.style.left = `${event.pageX}px`;
+            edit_menu.style.left = `${event.pageX -300}px`;
             edit_menu.style.top = `${event.pageY}px`;
+            console.log(event.pageX);
 
             editingTaskBox = newTaskBox;
         });
 
         scroll_container.appendChild(newTaskBox);
     }
+
 
     desc_box.style.visibility = "hidden";
     task_container.style.visibility = "visible";
