@@ -7,6 +7,10 @@ body {
     font-family: Nunito;
     color: white;
     background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .container {

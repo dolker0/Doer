@@ -76,14 +76,25 @@ save.addEventListener("click", () => {
 
         newTaskBox.addEventListener("contextmenu", (event) => {
             event.preventDefault();
+        
+            const clickX = event.pageX;
+            const clickY = event.pageY;
+        
+            const menuWidth = edit_menu.offsetWidth;
+            const menuHeight = edit_menu.offsetHeight;
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
 
+            const posX = (clickX + menuWidth > windowWidth) ? windowWidth - menuWidth : clickX;
+            const posY = (clickY + menuHeight > windowHeight) ? windowHeight - menuHeight : clickY;
+    
+            edit_menu.style.left = `${posX-300}px`;
+            edit_menu.style.top = `${posY}px`;
             edit_menu.style.visibility = "visible";
-            edit_menu.style.left = `${event.pageX -300}px`;
-            edit_menu.style.top = `${event.pageY}px`;
-            console.log(event.pageX);
-
+        
             editingTaskBox = newTaskBox;
         });
+        
 
         scroll_container.appendChild(newTaskBox);
     }
