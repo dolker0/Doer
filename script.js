@@ -88,8 +88,8 @@ save.addEventListener("click", () => {
             const posX = (clickX + menuWidth > windowWidth) ? windowWidth - menuWidth : clickX;
             const posY = (clickY + menuHeight > windowHeight) ? windowHeight - menuHeight : clickY;
     
-            edit_menu.style.left = `${posX-300}px`;
-            edit_menu.style.top = `${posY}px`;
+            edit_menu.style.left = `${posX-500}px`;
+            edit_menu.style.top = `${posY-120}px`;
             edit_menu.style.visibility = "visible";
         
             editingTaskBox = newTaskBox;
